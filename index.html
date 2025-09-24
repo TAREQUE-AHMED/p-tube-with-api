@@ -6,6 +6,12 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .active{
+            background-color: #FF1F3D;
+            color:white ;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,7 +30,7 @@
     </header>
     <nav class="flex py-5 justify-center gap-5" id="category-container">
             <div>
-                <button class="btn btn-sm bg-[#FF1F3D] text-white">All</button>
+                <button onclick="loadVideos()" class="btn btn-sm bg-[#FF1F3D] text-white">All</button>
             </div>
             <div>
         
@@ -32,7 +38,10 @@
         </nav>
         <section class="grid grid-cols-4 gap-3 mt-4 py-4 w-11/12 mx-auto" id="video-container">
              
-
+<div class="col-span-full flex flex-col py-20 justify-center items-center text-center">
+    <img class="w-[120px]" src="Assets/Icon.png" alt="">
+    <h2 class="text-2xl fond-bold">Oops! Sorry There is no content here</h2>
+</div>
         </section>
     <script src="script/script.js"></script>
 </body>
